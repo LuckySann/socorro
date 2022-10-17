@@ -1,0 +1,147 @@
+
+body {
+    background-image: url(../image/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family:  'VT323', monospace;
+    color: #f3f3f3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* viewport heigth - altura da janela 100 é 100%*/
+    padding: 30px;
+}
+
+.card {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.card .my-informations {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha horizontalmente por causa do flex direction column*/
+    gap: 10px;
+}
+
+.card .my-informations img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;   
+    border: 4px solid #02d08f;
+}
+
+.card .my-informations .name {
+    font-size: 26px;
+}
+
+.card .my-informations .office {
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.card .content {
+    background-color: #070d12;
+    margin-top: 15px;
+}
+
+.card .tabs {
+    display: flex;
+}
+
+.card .tabs .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background0-color 0.2s ease-in-out;
+}
+
+.tabs img {
+    width: 30px;
+}
+
+.card .tabs .tab.select {
+    background-color: #262626;
+
+}
+
+.card .tabs-informations {
+    background-color: #262626;
+}
+
+.card .tabs .tab:hover {
+    background-color: #414141;
+}
+
+.tabs-informations .information {
+    min-height: 260px;
+    padding: 15px;
+        display: none;
+}
+
+.tabs-informations .information.select {
+    display: block;
+}
+
+.tabs-informations .sub-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.tabs-informations .description {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.tabs-informations .description strong {
+    color: #02d08f;
+}
+
+.social-medias {
+    display:flex; 
+    flex-direction: column;
+    gap: 25px;  
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.social-medias li a {
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;   
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-medias .curriculum {
+    background-color: #06c185;
+}
+
+.social-medias .linkedin {
+    background-color: #1d87bd;
+}
+
+.social-medias .github {
+    background-color: #545454;
+}
+
+.social-medias li a:hover {
+    opacity: 0.8;
+}
+
